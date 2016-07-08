@@ -44,7 +44,7 @@ class TodoForm extends React.Component {
         <form onSubmit={this.createTodo.bind(this)}>
           <div className="row">
             <div className="form-group col-xs-10">
-              <input type="text" className="form-control" ref="newTodoInput" placeholder="What's today's task??" />
+              <input type="text" className="form-control" ref="newTodoInput" placeholder="What's today's task???" />
             </div>
             <div className="form-group col-xs-2">
               <button type="submit" className="btn btn-primary">Create</button>

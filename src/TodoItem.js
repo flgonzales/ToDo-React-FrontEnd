@@ -1,5 +1,6 @@
 import React from 'react';
 import jQuery from 'jquery';
+import EditableTextField from './EditableTextField';
 
 class TodoItem extends React.Component {
   constructor() {
@@ -120,10 +121,14 @@ class TodoItem extends React.Component {
 
       render() {
         return(
-          <div>
-          {this.state.title}
-          </div>
-        );
+      <li className={this.getClassName()}>
+        <a href="#" className="destroy pull-right" onClick={this.destroyMe.bind(this)}>x</a>
+        <input className="toggle" id={this.state.id} type="checkbox" ref="completed" checked={this.state.completed ? "checked" : ""} onChange={this.toggleChecked.bind(this)} />
+        <label for={this.state.id}>
+          <EditableTextField value={this.state.title} onChange={this.updateTitle.bind(this)} isEditable={!this.state.completed} />
+        </label>
+      </li>
+    );
       }
     }
 
