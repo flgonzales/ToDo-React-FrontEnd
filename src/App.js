@@ -10,9 +10,8 @@ import MyAwesomeReactComponent from './MyAwesomeReactComponent';
 class App extends React.Component {
     render() {
         return (
-          <MuiThemeProvider muiTheme={getMuiTheme(lightBaseTheme)}>
-            <TodoList/>
-          </MuiThemeProvider>
+
+          <h3> <TodoList/></h3>
         );
     }
 }

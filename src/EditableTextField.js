@@ -43,8 +43,8 @@ class EditableTextField extends React.Component {
   render() {
     if (this.state.editing) {
       return (
-        <div className="form-group">
-          <input type="text" className="form-control" ref="input" onBlur={this.textChanged.bind(this)} onKeyUp={this.handleKeyPress.bind(this)} defaultValue={this.props.value} />
+        <div className="fancyTitleBaseStyle">
+          <input type="text" className="fancyTitleBaseStyle" ref="input" onBlur={this.textChanged.bind(this)} onKeyUp={this.handleKeyPress.bind(this)} defaultValue={this.props.value} />
         </div>
       );
     } else {
