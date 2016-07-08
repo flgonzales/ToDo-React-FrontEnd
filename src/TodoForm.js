@@ -1,5 +1,7 @@
 import React from 'react';
 import jQuery from 'jquery';
+import CheckboxExampleSimple from './styles/CheckboxExampleSimple';
+import Checkbox from 'material-ui/Checkbox';
 
 class TodoForm extends React.Component {
   constructor() {
